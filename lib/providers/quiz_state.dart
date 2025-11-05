@@ -7,7 +7,7 @@ class QuizState extends ChangeNotifier {
   int _score = 0;
   int _currentQuestionIndex = 0;
   final List<Question> _questions = dummyQuestions;
-  final Map<int, String> _userAnswers = {}; // {index_pertanyaan: jawaban_dipilih}
+  final Map<int, String> _userAnswers = {};
 
   String get userName => _userName;
   int get score => _score;
@@ -30,7 +30,7 @@ class QuizState extends ChangeNotifier {
 
   // Logika menjawab pertanyaan
   void answerQuestion(String selectedOption) {
-    if (_userAnswers.containsKey(_currentQuestionIndex)) return; // Mencegah jawaban ganda
+    if (_userAnswers.containsKey(_currentQuestionIndex)) return;
 
     _userAnswers[_currentQuestionIndex] = selectedOption;
 
@@ -38,7 +38,7 @@ class QuizState extends ChangeNotifier {
       _score++;
     }
 
-    notifyListeners(); // Update UI segera setelah jawaban dipilih
+    notifyListeners();
   }
 
   // Navigasi ke pertanyaan berikutnya

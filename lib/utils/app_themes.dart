@@ -1,9 +1,7 @@
-// lib/utils/app_themes.dart
-
 import 'package:flutter/material.dart';
 
 class AppThemes {
-  // Base TextStyle
+
   static const String _fontFamily = 'Poppins';
 
   static final _baseTextTheme = const TextTheme(
@@ -19,17 +17,17 @@ class AppThemes {
     fontFamily: _fontFamily,
     brightness: Brightness.light,
     colorScheme: const ColorScheme.light(
-      primary: Color(0xFF4A148C), // Deep Purple
-      secondary: Color(0xFFFDD835), // Yellow Accent
-      background: Color(0xFFFAFAFA), // Pengganti Colors.grey[50]
+      primary: Color(0xFF4A148C),
+      secondary: Color(0xFFFDD835),
+      background: Color(0xFFFAFAFA),
       surface: Colors.white,
     ),
     textTheme: _baseTextTheme.apply(bodyColor: Colors.black87, displayColor: Colors.black),
-    // REVISI: Mengganti CardTheme menjadi CardThemeData
+
     cardTheme: CardThemeData(
       elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      color: Colors.white, // Menetapkan warna eksplisit untuk menghindari null safety
+      color: Colors.white,
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: const Color(0xFF4A148C),
@@ -39,23 +37,22 @@ class AppThemes {
     ),
   );
 
-  // Tema Gelap (Dark Theme) (Bonus: 1)
   static final darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: _fontFamily,
     brightness: Brightness.dark,
     colorScheme: const ColorScheme.dark(
-      primary: Color(0xFF9C27B0), // Purple
-      secondary: Color(0xFFFFEB3B), // Yellow Accent
-      background: Color(0xFF121212), // Pengganti Colors.grey[900]
-      surface: Color(0xFF1E1E1E), // Dark surface color
+      primary: Color(0xFF9C27B0),
+      secondary: Color(0xFFFFEB3B),
+      background: Color(0xFF121212),
+      surface: Color(0xFF1E1E1E),
     ),
     textTheme: _baseTextTheme.apply(bodyColor: Colors.white70, displayColor: Colors.white),
-    // REVISI: Mengganti CardTheme menjadi CardThemeData
+
     cardTheme: CardThemeData(
       elevation: 8,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      color: const Color(0xFF2C2C2C), // Menetapkan warna eksplisit untuk menghindari null safety
+      color: const Color(0xFF2C2C2C),
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: const Color(0xFF1F1F1F),
