@@ -6,9 +6,9 @@ Aplikasi Kuis  | UTS Pemrograman Mobile
 
 | Detail | Keterangan |
 | :--- | :--- |
-| **Nama** | <GANTI DENGAN NAMA ANDA> |
-| **NIM** | <GANTI DENGAN NIM ANDA> |
-| **Lab** | <GANTI DENGAN NAMA LAB/KELOMPOK> |
+| **Nama** | <Dame Theresia Rejeki Sidauruk> |
+| **NIM** | <231401022> |
+| **Lab** | <1 Pemmob> |
 
 ## B. NAMA APLIKASI
 
@@ -34,6 +34,6 @@ Aplikasi kuis pilihan ganda yang dibangun menggunakan Flutter dan Dart. Dirancan
 | Aset / Referensi | Sumber |
 | :--- | :--- |
 | **Font Kustom** | Poppins (dari Google Fonts) |
-| **Aset Logo Kuis** | `assets/images/quiz_logo.png` (Ganti dengan sumber jika menggunakan logo eksternal) |
+| **Aset Logo Kuis** | `assets/images/quiz_logo.png` |
 | **Referensi Mockup** | [GANTI DENGAN LINK MOCKUP / INSPIRASI UTAMA ANDA] |
 | **Ikon UI** | Flutter Material Icons |
