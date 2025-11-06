@@ -1,16 +1,39 @@
-# uts
+# 🏆 APLIKASI KUIS AKADEMIK FLUTTER
 
-A new Flutter project.
+Aplikasi Kuis  | UTS Pemrograman Mobile
 
-## Getting Started
+## A. DATA MAHASISWA
 
-This project is a starting point for a Flutter application.
+| Detail | Keterangan |
+| :--- | :--- |
+| **Nama** | <GANTI DENGAN NAMA ANDA> |
+| **NIM** | <GANTI DENGAN NIM ANDA> |
+| **Lab** | <GANTI DENGAN NAMA LAB/KELOMPOK> |
 
-A few resources to get you started if this is your first Flutter project:
+## B. NAMA APLIKASI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Kuis Akademik Pintar**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## C. DESKRIPSI APLIKASI
+
+Aplikasi kuis pilihan ganda yang dibangun menggunakan Flutter dan Dart. Dirancang untuk memenuhi semua kriteria UTS dengan fokus pada pengalaman pengguna yang estetik, responsif, dan stabil.
+
+**Fitur Utama:**
+1.  **State Management (Provider):** Progres kuis (skor, jawaban) dipertahankan saat rotasi layar atau navigasi.
+2.  **Multipage:** Navigasi antara Splash Screen, Welcome, Quiz, Result, dan Review.
+3.  **Desain Adaptif (Bonus):** Tampilan rapi dan proporsional di perangkat *mobile* maupun *web view* (tablet).
+4.  **Dual-Theme (Bonus):** Mendukung Mode Terang dan Mode Gelap yang konsisten.
+5.  **Review Jawaban:** Menyediakan pembahasan (*explanation*) untuk setiap pertanyaan setelah kuis selesai.
+6.  **Interaksi Awal:** Menggunakan Splash Screen interaktif (tombol klik).
+
+## D. CREDIT KE SUMBER-SUMBER ASET
+
+*Semua aset dan desain diselaraskan dengan kriteria estetika modern bertema ungu/violet.*
+
+| Aset / Referensi | Sumber |
+| :--- | :--- |
+| **Font Kustom** | Poppins (dari Google Fonts) |
+| **Aset Logo Kuis** | `assets/images/quiz_logo.png` (Ganti dengan sumber jika menggunakan logo eksternal) |
+| **Referensi Mockup** | [GANTI DENGAN LINK MOCKUP / INSPIRASI UTAMA ANDA] |
+| **Ikon UI** | Flutter Material Icons |
