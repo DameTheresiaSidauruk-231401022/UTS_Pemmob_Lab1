@@ -35,5 +35,5 @@ Aplikasi kuis pilihan ganda yang dibangun menggunakan Flutter dan Dart. Dirancan
 | :--- | :--- |
 | **Font Kustom** | Poppins (dari Google Fonts) |
 | **Aset Logo Kuis** | `assets/images/quiz_logo.png` |
-| **Referensi Mockup** | [GANTI DENGAN LINK MOCKUP / INSPIRASI UTAMA ANDA] |
+| **Referensi Mockup** | (https://www.figma.com/design/E890UCUvKPSsVCpCuaWamy/Quiz-App-UI-Design--Community-?node-id=0-1&p=f&t=BLurKf5PoCdt4Lq4-0) |
 | **Ikon UI** | Flutter Material Icons |
