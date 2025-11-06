@@ -6,7 +6,7 @@ class ReviewCard extends StatelessWidget {
   final String userAnswer;
   final String correctAnswer;
   final bool isCorrect;
-  final String explanation; // Wajib: Properti baru
+  final String explanation;
   final double screenWidth;
 
   const ReviewCard({
@@ -15,22 +15,22 @@ class ReviewCard extends StatelessWidget {
     required this.userAnswer,
     required this.correctAnswer,
     required this.isCorrect,
-    required this.explanation, // Wajib: Tambahkan ke constructor
+    required this.explanation,
     required this.screenWidth,
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    // Penyesuaian warna dan ikon berdasarkan status jawaban (Wajib: 4)
+    // Penyesuaian warna dan ikon berdasarkan status jawaban
     final Color statusColor = isCorrect ? Colors.green.shade600 : Colors.red.shade600;
     final IconData statusIcon = isCorrect ? Icons.check_circle_outline : Icons.cancel_outlined;
     final Color primaryColor = Theme.of(context).colorScheme.primary;
 
     return Card(
-      // Wajib: 6 - Margin dinamis
+
       margin: EdgeInsets.only(bottom: screenWidth * 0.04),
-      elevation: 8, // Lebih elegan
+      elevation: 8,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
       ),
@@ -39,7 +39,7 @@ class ReviewCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 1. Header Pertanyaan dan Status
+
             Row(
               children: [
                 Icon(statusIcon, color: statusColor, size: 24), // Ikon Status
@@ -63,16 +63,14 @@ class ReviewCard extends StatelessWidget {
             ),
             const Divider(height: 15),
 
-            // 2. Teks Pertanyaan (Soal)
             Text(
               questionText,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                fontWeight: FontWeight.w600, // Menekankan teks pertanyaan
+                fontWeight: FontWeight.w600,
               ),
             ),
             SizedBox(height: screenWidth * 0.04),
 
-            // 3. Jawaban Pengguna (Disorot jika salah)
             Container(
               padding: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
@@ -100,7 +98,6 @@ class ReviewCard extends StatelessWidget {
             ),
             SizedBox(height: screenWidth * 0.02),
 
-            // 4. Jawaban Benar (Selalu ditampilkan untuk referensi jika salah, atau di bawah jika benar)
             if (!isCorrect)
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
@@ -121,7 +118,6 @@ class ReviewCard extends StatelessWidget {
 
             SizedBox(height: screenWidth * 0.03),
 
-            // 5. Pembahasan/Penjelasan (Estetik & Rapi)
             _buildExplanationSection(context, explanation, screenWidth),
           ],
         ),
@@ -129,9 +125,8 @@ class ReviewCard extends StatelessWidget {
     );
   }
 
-  // Helper function untuk membangun bagian penjelasan (Pembahasan)
   Widget _buildExplanationSection(BuildContext context, String explanation, double screenWidth) {
-    // Menggunakan ExpansionTile agar Pembahasan bisa dibuka-tutup (Rapi & Elegan)
+
     return Card(
       elevation: 0,
       color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
