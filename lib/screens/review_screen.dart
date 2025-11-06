@@ -13,7 +13,7 @@ class ReviewScreen extends StatelessWidget {
     // Menggunakan Consumer untuk mendapatkan data kuis
     return Consumer<QuizState>(
       builder: (context, quizState, child) {
-        // Wajib: 6 - Dapatkan lebar layar
+
         final screenWidth = MediaQuery.of(context).size.width;
 
         return Scaffold(
@@ -21,21 +21,20 @@ class ReviewScreen extends StatelessWidget {
             title: const Text('Review Jawaban'),
           ),
           body: ListView.builder(
-            padding: EdgeInsets.all(screenWidth * 0.04), // Wajib: 6
+            padding: EdgeInsets.all(screenWidth * 0.04),
             itemCount: quizState.totalQuestions,
             itemBuilder: (context, index) {
               final question = quizState.questions[index];
               final userAnswer = quizState.userAnswers[index];
               final isCorrect = userAnswer == question.correctAnswer;
 
-              // Menggunakan Widget Reusable (Wajib: 3)
               return ReviewCard(
                 questionNumber: index + 1,
                 questionText: question.questionText,
                 userAnswer: userAnswer ?? 'Tidak dijawab',
                 correctAnswer: question.correctAnswer,
                 isCorrect: isCorrect,
-                // PERBAIKAN: Menambahkan properti explanation
+
                 explanation: question.explanation,
                 screenWidth: screenWidth,
               );
