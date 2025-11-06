@@ -18,7 +18,7 @@ class OptionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color getCardColor() {
-      // Gunakan warna surface/background sebagai fallback jika cardTheme.color null
+
       final defaultCardColor = Theme.of(context).cardTheme.color ?? Theme.of(context).colorScheme.surface;
 
       if (!isAnswered) {
@@ -36,7 +36,7 @@ class OptionCard extends StatelessWidget {
     return GestureDetector(
       onTap: isAnswered ? null : onTap,
       child: Card(
-        // Wajib: 6 - Padding dinamis berdasarkan cardTheme (elevation)
+        // Padding dinamis berdasarkan cardTheme (elevation)
         elevation: isSelected ? 8 : 4,
         margin: const EdgeInsets.symmetric(vertical: 8.0),
         color: getCardColor(),
