@@ -5,7 +5,7 @@ import '../widgets/option_card.dart';
 import '../widgets/custom_button.dart';
 import 'result_screen.dart';
 
-// StatelessWidget (state kuis dikelola oleh Provider) (Wajib: 1)
+// StatelessWidget
 class QuizScreen extends StatelessWidget {
   static const routeName = '/quiz';
 
@@ -13,10 +13,9 @@ class QuizScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size; // Wajib: 6
-    final isLandscape = size.width > size.height; // Bonus: 2 (Rotasi)
+    final size = MediaQuery.of(context).size;
+    final isLandscape = size.width > size.height;
 
-    // Wajib: 7 - Consumer
     return Consumer<QuizState>(
       builder: (context, quizState, child) {
         if (quizState.questions.isEmpty) {
@@ -61,7 +60,7 @@ class QuizScreen extends StatelessWidget {
         }
 
         Widget buildNextButton() {
-          // Wajib: 3 - Custom Button
+          // Custom Button
           return CustomButton(
             text: isLastQuestion ? 'Lihat Hasil' : 'Lanjut',
             isEnabled: isAnswered,
@@ -69,7 +68,7 @@ class QuizScreen extends StatelessWidget {
               if (!isAnswered) return;
 
               if (isLastQuestion) {
-                // Wajib: 2 - Navigasi ke hasil
+                // Navigasi ke hasil
                 Navigator.of(context).pushReplacementNamed(ResultScreen.routeName);
               } else {
                 quizState.nextQuestion();
@@ -85,7 +84,7 @@ class QuizScreen extends StatelessWidget {
           ),
           body: Padding(
             padding: EdgeInsets.all(size.width * 0.05),
-            child: isLandscape || size.width > 600 // Bonus: 2 (Responsive Layout)
+            child: isLandscape || size.width > 600 // (Responsive Layout)
                 ? Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -103,7 +102,7 @@ class QuizScreen extends StatelessWidget {
                 ),
               ],
             )
-                : Column( // Layout Portrait
+                : Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Expanded(child: SingleChildScrollView(child: buildQuestionContent(false))),
