@@ -6,9 +6,9 @@ Aplikasi Kuis  | UTS Pemrograman Mobile
 
 | Detail | Keterangan |
 | :--- | :--- |
-| **Nama** | <Dame Theresia Rejeki Sidauruk> |
-| **NIM** | <231401022> |
-| **Lab** | <1 Pemmob> |
+| **Nama** | Dame Theresia Rejeki Sidauruk |
+| **NIM** | 231401022 |
+| **Lab** | 1 Pemmob |
 
 ## B. NAMA APLIKASI
 
