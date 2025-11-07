@@ -37,3 +37,9 @@ Aplikasi kuis pilihan ganda yang dibangun menggunakan Flutter dan Dart. Dirancan
 | **Aset Logo Kuis** | `assets/images/quiz_logo.png` |
 | **Referensi Mockup** | (https://www.figma.com/design/E890UCUvKPSsVCpCuaWamy/Quiz-App-UI-Design--Community-?node-id=0-1&p=f&t=BLurKf5PoCdt4Lq4-0) |
 | **Ikon UI** | Flutter Material Icons |
+
+## E. Screenshot/Video Aplikasi
+https://drive.google.com/drive/folders/1KNBPQWQq7PPH09DFIrJsNPP2ZAS6c-dM?usp=sharing
+
+## F.  Link mockup/prototype Aplikasi
+https://www.figma.com/design/E890UCUvKPSsVCpCuaWamy/Quiz-App-UI-Design--Community-?node-id=0-1&p=f&t=BLurKf5PoCdt4Lq4-0
